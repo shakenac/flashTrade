@@ -46,6 +46,11 @@ h3 {
 .flex {
    display: flex;
 
+   //flex direction
+   &-fd-c {
+      flex-direction: column;
+   }
+
    //justify content
    &-jc-sb {
       justify-content: space-between;
