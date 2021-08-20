@@ -1,3 +1,3 @@
-# flashTrade
+# FlashTrade Landing Page
 
-Based on pre-existing Wix template
+Based on pre-existing Wix template design
