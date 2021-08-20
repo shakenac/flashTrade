@@ -40,3 +40,22 @@ h3 {
    font-weight: 400;
    letter-spacing: -.03125rem; //-.5px
 }
+
+
+/// Flexbox
+.flex {
+   display: flex;
+
+   //justify content
+   &-jc-sb {
+      justify-content: space-between;
+   }
+   &-jc-c {
+      justify-content: center;
+   }
+
+   //align items
+   &-ai-c {
+      align-items: center;
+   }
+}
