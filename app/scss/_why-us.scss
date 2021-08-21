@@ -1,0 +1,31 @@
+.why-us {
+
+   background-color: $darkBlue;
+
+   h2 {
+      color: $white;
+   }
+   .why-us__inner {
+      justify-content: space-between;
+   }
+   // Text
+   &__text {
+      text-align: center;
+
+      h3 {
+         color: $blueGreen;
+      }
+      p {
+         color: $white;
+      }
+   }
+
+   // Image
+   &__image {
+      max-width: 500px;
+
+      img {
+         width: 100%;
+      }
+   }
+}
