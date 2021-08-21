@@ -98,7 +98,7 @@ button:hover, .button:hover {
 .header .header__links a {
   font-size: 0.8125rem;
   font-weight: 300;
-  margin-left: 0.9375rem;
+  padding: 0.5rem;
 }
 .header .hamburger {
   height: 0.9375rem;
