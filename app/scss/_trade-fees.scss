@@ -1,3 +1,49 @@
 .trade-fees {
-   
+
+   background-color: $darkBlue;
+   color: $white;
+
+   // trades
+   &__trades {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-items: flex-start;
+      align-content: flex-start;
+
+      h3 {
+         margin-bottom: 1.5625rem;
+         color: $blueGreen;
+      }
+      h4 {
+         margin-bottom: 1.25rem;
+      }
+   }
+
+   &__inner {
+      padding-left: 1.5625rem;
+      padding-right: 1.5625rem;
+      max-width: 15.625rem;
+
+      @include mobile-query {
+         max-width: 100%;
+      }
+
+      &:not(:first-child) {
+         @include mobile-query {
+            margin-top: 2.5rem;
+         }
+      }
+
+
+      img {
+         width: 100%;
+
+         @include mobile-query {
+            max-width: 14.0625rem;
+         }
+      }
+   }
+
 }

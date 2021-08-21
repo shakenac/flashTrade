@@ -77,9 +77,16 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-weight: 300;
+  margin: 0;
+}
+
 p {
   margin: 0;
   font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 .section-padding {
@@ -92,6 +99,7 @@ p {
 }
 .section-header p {
   margin-bottom: 3.125rem;
+  font-size: 18px;
 }
 
 .flex {
@@ -384,6 +392,49 @@ button:hover, .button:hover {
 }
 .featured__companies img {
   max-width: 15.625rem;
+}
+
+.trade-fees {
+  background-color: #01203a;
+  color: #ffffff;
+}
+.trade-fees__trades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.trade-fees__trades h3 {
+  margin-bottom: 1.5625rem;
+  color: #00e4a2;
+}
+.trade-fees__trades h4 {
+  margin-bottom: 1.25rem;
+}
+.trade-fees__inner {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+  max-width: 15.625rem;
+}
+@media (max-width: 39.9375em) {
+  .trade-fees__inner {
+    max-width: 100%;
+  }
+}
+@media (max-width: 39.9375em) {
+  .trade-fees__inner:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+}
+.trade-fees__inner img {
+  width: 100%;
+}
+@media (max-width: 39.9375em) {
+  .trade-fees__inner img {
+    max-width: 14.0625rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
