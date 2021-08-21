@@ -3,17 +3,13 @@
 // fade-in (keyframe)
 @keyframes fade-in {
    from {
-      visibility: hidden;
+      // visibility: hidden;
       opacity: 0;
    }
    to {
-      visibility: visible;
+      // visibility: visible;
       opacity: 1;
    }
-}
-
-.fade-in {
-   animation: fade-in 200ms ease-in-out;
 }
 
 // fade-out (keyframe)
@@ -28,6 +24,9 @@
    }
 }
 
+.fade-in {
+   animation: fade-in 200ms ease-in-out;
+}
 .fade-out {
    animation: fade-out 200ms ease-in-out;
 }
