@@ -124,6 +124,9 @@ button:hover, .button:hover {
 .header .open.hamburger > span:last-child {
   transform: rotate(-45deg);
 }
+.header .open.header__mobileNav {
+  visibility: visible;
+}
 .header__mobileNav {
   background-color: #01203a;
   text-align: center;
@@ -132,6 +135,7 @@ button:hover, .button:hover {
   position: fixed;
   top: 0;
   padding-top: 70px;
+  visibility: hidden;
 }
 .header__mobileNav ul {
   padding-left: 0;
