@@ -399,7 +399,6 @@ button:hover, .button:hover {
   color: #ffffff;
 }
 .trade-fees__trades {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
