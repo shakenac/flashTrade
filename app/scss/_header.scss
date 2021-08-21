@@ -53,8 +53,8 @@
 
    }
    // hamburger menu (opened)
-   .open {
-      &.hamburger {
+   &.open {
+      .hamburger {
          > span:first-child {
             transform: rotate(45deg);
          }
@@ -65,22 +65,24 @@
             transform: rotate(-45deg);
          }
       }
-      &.header__mobileNav {
+      .header__mobileNav {
          visibility: visible;
+         overflow: hidden;
       }
    }
 
 
    // mobile nav
    &__mobileNav {
-      background-color: $darkBlue;
-      text-align: center;
+      visibility: hidden;
+      position: fixed;
       height: 100vh;
       width: 100%;
-      position: fixed;
       top: 0;
+      z-index: 5;
       padding-top: 70px;
-      visibility: hidden;
+      text-align: center;
+      background-color: $darkBlue;
 
       ul {
          padding-left: 0;

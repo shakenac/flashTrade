@@ -1,18 +1,22 @@
 const btnHamburger = document.querySelector('#btnHamburger');
+const header = document.querySelector('.header');
 const mobileNav = document.querySelector('.header__mobileNav');
+const bodyTag = document.querySelector("body");
 
 
 // Mobile Navigation toggle
 btnHamburger.addEventListener('click', function() {
-   if (btnHamburger.classList.contains('open')) {
-      btnHamburger.classList.remove('open');
-      mobileNav.classList.remove('open');
+   if (header.classList.contains('open')) {
+
+      //added open class to header (the parent element) and removed from btnhamburger
+      // remove open -- close mobile nav
+      header.classList.remove('open');
       mobileNav.classList.remove('fade-in');
       mobileNav.classList.add('fade-out');
    }
    else {
-      btnHamburger.classList.add('open');
-      mobileNav.classList.add('open');
+      // add open -- open mobile nav
+      header.classList.add('open');
       mobileNav.classList.remove('fade-out');
       mobileNav.classList.add('fade-in');
    }

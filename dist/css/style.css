@@ -1,5 +1,6 @@
 @keyframes fade-in {
   from {
+    visibility: hidden;
     opacity: 0;
   }
   to {
@@ -7,6 +8,10 @@
     opacity: 1;
   }
 }
+.fade-in {
+  animation: fade-in 500ms ease-in-out;
+}
+
 @keyframes fade-out {
   from {
     visibility: visible;
@@ -17,10 +22,6 @@
     opacity: 0;
   }
 }
-.fade-in {
-  animation: fade-in 500ms ease-in-out normal;
-}
-
 .fade-out {
   animation: fade-out 500ms ease-in-out;
 }
@@ -142,27 +143,29 @@ button:hover, .button:hover {
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
 }
-.header .open.hamburger > span:first-child {
+.header.open .hamburger > span:first-child {
   transform: rotate(45deg);
 }
-.header .open.hamburger > span:nth-child(2) {
+.header.open .hamburger > span:nth-child(2) {
   opacity: 0;
 }
-.header .open.hamburger > span:last-child {
+.header.open .hamburger > span:last-child {
   transform: rotate(-45deg);
 }
-.header .open.header__mobileNav {
+.header.open .header__mobileNav {
   visibility: visible;
+  overflow: hidden;
 }
 .header__mobileNav {
-  background-color: #01203a;
-  text-align: center;
+  visibility: hidden;
+  position: fixed;
   height: 100vh;
   width: 100%;
-  position: fixed;
   top: 0;
+  z-index: 5;
   padding-top: 70px;
-  visibility: hidden;
+  text-align: center;
+  background-color: #01203a;
 }
 .header__mobileNav ul {
   padding-left: 0;
