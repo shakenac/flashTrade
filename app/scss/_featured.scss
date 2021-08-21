@@ -1,0 +1,18 @@
+.featured {
+   background-color: $lightPurple;
+
+   &__companies {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 5rem;
+
+      @include mobile-query {
+         margin-top: 3.125rem;
+      }
+
+      img {
+         max-width: 15.625rem;
+      }
+   }
+
+}
