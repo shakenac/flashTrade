@@ -22,3 +22,12 @@ btnHamburger.addEventListener('click', function() {
       bodyTag.style.overflow = "hidden";
    }
 })
+
+
+/// Stop fade-out animation for mobileNav if window is resized
+//when the window is resized: if fade-out class is present on mobileNav remove it
+window.addEventListener('resize', function() {
+   if (mobileNav.classList.contains('fade-out')) {
+      mobileNav.classList.remove('fade-out');
+   }
+})

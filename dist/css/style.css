@@ -141,6 +141,9 @@ button:hover, .button:hover {
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
 }
+.header.open .hamburger {
+  padding-right: 15px;
+}
 .header.open .hamburger > span:first-child {
   transform: rotate(45deg);
 }
