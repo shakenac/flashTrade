@@ -369,4 +369,21 @@ button:hover, .button:hover {
   margin-top: 80px;
 }
 
+.featured {
+  background-color: #eeeef7;
+}
+.featured__companies {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+@media (max-width: 39.9375em) {
+  .featured__companies {
+    margin-top: 3.125rem;
+  }
+}
+.featured__companies img {
+  max-width: 15.625rem;
+}
+
 /*# sourceMappingURL=style.css.map */
