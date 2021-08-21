@@ -67,7 +67,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: -0.0625rem;
-  margin: 0;
+  margin: 0 0 35px 0;
 }
 
 h3 {
@@ -80,6 +80,18 @@ h3 {
 p {
   margin: 0;
   font-weight: 300;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-header {
+  text-align: center;
+}
+.section-header p {
+  margin-bottom: 50px;
 }
 
 .flex {
@@ -236,6 +248,29 @@ button:hover, .button:hover {
     padding-right: 90px;
     margin-bottom: 40px;
   }
+}
+@media (max-width: 39.9375em) {
+  .hero__text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.how-it-works {
+  background-color: #eeeef7;
+}
+.how-it-works .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+.how-it-works .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

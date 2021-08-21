@@ -44,7 +44,7 @@ h2 {
    font-size: 2.5rem; //40px
    font-weight: 400;
    letter-spacing: -.0625rem; //-1px
-   margin: 0;
+   margin: 0 0 35px 0;
 }
 h3 {
    font-size: 1.375rem; //22px
@@ -55,6 +55,22 @@ h3 {
 p {
    margin: 0;
    font-weight: 300;
+}
+
+// .section-header-subheader {
+//    text-align: center;
+// }
+
+.section-padding {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.section-header {
+   text-align: center;
+   p {
+      margin-bottom: 50px;
+   }
 }
 
 

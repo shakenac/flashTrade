@@ -47,6 +47,10 @@
          padding-right: 90px;
          margin-bottom: 40px;
       }
+      @include mobile-query {
+         padding-left: 30px;
+         padding-right: 30px;
+      }
    }
 
 
