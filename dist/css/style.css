@@ -364,5 +364,9 @@ button:hover, .button:hover {
 .why-us__image img {
   width: 100%;
 }
+.why-us .download-button {
+  text-align: center;
+  margin-top: 80px;
+}
 
 /*# sourceMappingURL=style.css.map */
