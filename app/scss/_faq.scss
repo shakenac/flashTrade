@@ -1,0 +1,35 @@
+.faq {
+
+   background-color: $darkBlue;
+   color: $white;
+
+   &.section-padding {
+      padding-top: 3.125rem;
+   }
+
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3.75rem;
+      margin-top: 4.375rem;
+      text-align: center;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+
+      @include mobile-query {
+         grid-template-columns: 1fr;
+         grid-row-gap: 4.375rem;
+      }
+
+      .faq__q-a {
+
+         h3 {
+            color: $blueGreen;
+            margin-bottom: 1.25rem;
+         }
+
+      }
+
+   }
+
+}

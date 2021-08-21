@@ -436,4 +436,31 @@ button:hover, .button:hover {
   }
 }
 
+.faq {
+  background-color: #01203a;
+  color: #ffffff;
+}
+.faq.section-padding {
+  padding-top: 3.125rem;
+}
+.faq__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3.75rem;
+  margin-top: 4.375rem;
+  text-align: center;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+@media (max-width: 39.9375em) {
+  .faq__inner {
+    grid-template-columns: 1fr;
+    grid-row-gap: 4.375rem;
+  }
+}
+.faq__inner .faq__q-a h3 {
+  color: #00e4a2;
+  margin-bottom: 1.25rem;
+}
+
 /*# sourceMappingURL=style.css.map */
