@@ -101,6 +101,9 @@
    background-color: $darkBlue;
    color: $white;
 
+   &.section-padding {
+      padding-top: 20px;   
+   }
    .container {
       max-width: 600px;
    }
@@ -162,4 +165,12 @@
          }
       }
    }
+}
+
+
+footer {
+   background-color: $darkBlue;
+   text-align: center;
+   color: $white;
+   padding-bottom: 50px;
 }
