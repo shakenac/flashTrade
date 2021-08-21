@@ -56,6 +56,16 @@ h3 {
   align-items: center;
 }
 
+button, .button {
+  color: #ffffff;
+  padding: 10px 15px;
+  background-color: #7121ea;
+  font-size: 14px;
+}
+button:hover, .button:hover {
+  background-color: rgba(113, 33, 234, 0.6);
+}
+
 .header {
   background-color: #01203a;
 }

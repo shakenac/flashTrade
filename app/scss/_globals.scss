@@ -65,3 +65,16 @@ h3 {
       align-items: center;
    }
 }
+
+
+/// Buttons
+button, .button {
+   color: $white;
+   padding: 10px 15px;
+   background-color: $purple;
+   font-size: 14px;
+
+   &:hover {
+      background-color: rgba(113, 33, 234, 0.6);
+   }
+}
