@@ -1,1 +1,31 @@
-// Animations for Mobile Navigation (fade in/out)
+/// Animations for Mobile Navigation (fade in/out)
+
+// fade-in (keyframe)
+@keyframes fade-in {
+   from {
+      opacity: 0;
+   }
+   to {
+      visibility: visible;
+      opacity: 1;
+   }
+}
+
+// fade-out (keyframe)
+@keyframes fade-out {
+   from {
+      visibility: visible;
+      opacity: 1;
+   }
+   to {
+      visibility: hidden;
+      opacity: 0;
+   }
+}
+
+.fade-in {
+   animation: fade-in 500ms ease-in-out normal;
+}
+.fade-out {
+   animation: fade-out 500ms ease-in-out;
+}

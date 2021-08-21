@@ -1,3 +1,30 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-in {
+  animation: fade-in 500ms ease-in-out normal;
+}
+
+.fade-out {
+  animation: fade-out 500ms ease-in-out;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
