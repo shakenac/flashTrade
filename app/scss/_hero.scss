@@ -1,0 +1,14 @@
+.hero {
+
+   .flex {
+      justify-content: space-between;
+   }
+   &__image {
+      img {
+         width: 600px;
+         // height: 659px;
+      }
+   }
+
+
+}
