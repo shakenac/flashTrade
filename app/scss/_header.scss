@@ -45,9 +45,28 @@
          width: 1.5625rem; //25px
          height: 0.125rem; //2px
          background-color: $white;
+
+         border-radius: 3.125rem; //50px
+         transition: all 300ms ease-in-out;
+         transform-origin: 3px 1px;
       }
 
    }
+   // hamburger menu (opened)
+   &.open {
+      .hamburger {
+         > span:first-child {
+            transform: rotate(45deg);
+         }
+         > span:nth-child(2) {
+            opacity: 0;
+         }
+         > span:last-child {
+            transform: rotate(-45deg);
+         }
+      }
+   }
+
 
    // mobile nav
    &__mobileNav {
