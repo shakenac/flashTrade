@@ -1,6 +1,13 @@
 .header {
 
+   position: fixed;
+   width: 100%;
    background-color: $darkBlue;
+   z-index: 2;
+
+   @include mobile-query {
+      position: static; 
+   }
 
    // Navigation
    nav {
@@ -48,7 +55,7 @@
 
          border-radius: 3.125rem; //50px
          transition: all 300ms ease-in-out;
-         transform-origin: 3px 1px;
+         transform-origin: 0.1875rem 0.0625rem; //3px 1px
       }
 
    }
@@ -64,7 +71,7 @@
          > span:last-child {
             transform: rotate(-45deg);
          }
-         padding-right: 15px;
+         padding-right: 0.9375rem;
       }
       .header__mobileNav {
          visibility: visible;
@@ -88,16 +95,16 @@
          padding-left: 0;
 
          li {
-            padding: 10px;
+            padding: 0.625rem;
          }
       }
       a {
          color: $white;
-         font-size: 18px;
+         font-size: 1.125rem; //18px
          font-weight: 300;
       }
       .header__mobileInner {
-         padding-top: 70px;
+         padding-top: 4.375rem; //70px
       }
 
    }

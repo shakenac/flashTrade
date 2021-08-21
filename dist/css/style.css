@@ -133,7 +133,15 @@ button:hover, .button:hover {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   background-color: #01203a;
+  z-index: 2;
+}
+@media (max-width: 39.9375em) {
+  .header {
+    position: static;
+  }
 }
 .header nav {
   padding: 1.875rem;
@@ -167,10 +175,10 @@ button:hover, .button:hover {
   background-color: #ffffff;
   border-radius: 3.125rem;
   transition: all 300ms ease-in-out;
-  transform-origin: 3px 1px;
+  transform-origin: 0.1875rem 0.0625rem;
 }
 .header.open .hamburger {
-  padding-right: 15px;
+  padding-right: 0.9375rem;
 }
 .header.open .hamburger > span:first-child {
   transform: rotate(45deg);
@@ -199,15 +207,15 @@ button:hover, .button:hover {
   padding-left: 0;
 }
 .header__mobileNav ul li {
-  padding: 10px;
+  padding: 0.625rem;
 }
 .header__mobileNav a {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 .header__mobileNav .header__mobileInner {
-  padding-top: 70px;
+  padding-top: 4.375rem;
 }
 
 .hero {
