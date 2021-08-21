@@ -93,6 +93,18 @@ p {
    }
 }
 
+/// Grid
+.grid {
+   display: grid;
+
+   // Columns
+   &-col-2 {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+
+
 
 /// Buttons
 button, .button {
