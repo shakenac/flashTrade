@@ -477,7 +477,6 @@ button:hover, .button:hover {
   color: #00e4a2;
 }
 .contact form {
-  display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
   grid-row-gap: 20px;
@@ -542,6 +541,63 @@ button:hover, .button:hover {
   font-family: "Nunito Sans", sans-serif;
 }
 .contact form .submit .form-btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.subscribe {
+  background-color: #01203a;
+  color: #ffffff;
+}
+.subscribe .container {
+  max-width: 600px;
+}
+.subscribe h3 {
+  margin-bottom: 35px;
+}
+.subscribe form {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+.subscribe form .email {
+  width: 100%;
+}
+.subscribe form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ffffff;
+  background-color: #01203a;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.subscribe form input::placeholder {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.subscribe form input:hover {
+  border: 1px solid #ffffff;
+  transition: border 0.2s ease-in-out;
+}
+.subscribe form .submit {
+  width: 100%;
+}
+.subscribe form .submit input {
+  border: 1px solid transparent;
+}
+.subscribe form .submit .form-btn {
+  background-color: #ffffff;
+  color: #01203a;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+}
+.subscribe form .submit .form-btn:hover {
   background-color: rgba(255, 255, 255, 0.6);
   color: #ffffff;
   transition: all 0.2s ease-in-out;
