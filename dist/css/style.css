@@ -95,19 +95,42 @@ button:hover, .button:hover {
   margin-right: 0.625rem;
   width: 2.8125rem;
 }
-.header .header__links a {
+.header__links a {
   font-size: 0.8125rem;
   font-weight: 300;
   padding: 0.5rem;
 }
 .header .hamburger {
   height: 0.9375rem;
+  position: absolute;
+  right: 1.875rem;
+  z-index: 10;
 }
 .header .hamburger > span {
   display: block;
   width: 1.5625rem;
   height: 0.125rem;
   background-color: #ffffff;
+}
+.header__mobileNav {
+  background-color: #01203a;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 70px;
+}
+.header__mobileNav ul {
+  padding-left: 0;
+}
+.header__mobileNav ul li {
+  padding: 10px;
+}
+.header__mobileNav a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
