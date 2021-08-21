@@ -1,7 +1,7 @@
 .hero {
 
-   padding-top: 70px;
-   padding-bottom: 70px;
+   padding-top: 4.375rem; //70px
+   padding-bottom: 4.375rem; //70px
    background-color: $darkBlue;
    color: $white;
 
@@ -9,8 +9,8 @@
    .container {
 
       @include mobile-query {
-         padding-left: 30px;
-         padding-right: 30px;
+         padding-left: 1.875rem; //30px
+         padding-right: 1.875rem; //30px
       }
    }
 
@@ -25,7 +25,7 @@
 
    // hero image
    &__image {
-      max-width: 600px;
+      max-width: 37.5rem; //600px
 
       img {
          width: 100%;
@@ -35,21 +35,21 @@
    // hero text
    &__text {
       h1 {
-         margin-bottom: 30px;
+         margin-bottom: 1.875rem;
       }
       p {
-         margin-bottom: 40px;
-         line-height: 25px;
-         font-size: 18px;
+         margin-bottom: 2.5rem; //40px
+         line-height: 1.5625rem; //25px
+         font-size: 1.125rem; //18px
       }
       @include hero-section-query {
-         padding-left: 90px;
-         padding-right: 90px;
-         margin-bottom: 40px;
+         padding-left: 5.625rem; //90px
+         padding-right: 5.625rem;
+         margin-bottom: 2.5rem;
       }
       @include mobile-query {
-         padding-left: 30px;
-         padding-right: 30px;
+         padding-left: 1.875rem;
+         padding-right: 1.875rem;
       }
    }
 
