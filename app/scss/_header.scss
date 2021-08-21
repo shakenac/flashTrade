@@ -80,7 +80,6 @@
       width: 100%;
       top: 0;
       z-index: 5;
-      padding-top: 70px;
       text-align: center;
       background-color: $darkBlue;
 
@@ -96,7 +95,9 @@
          font-size: 18px;
          font-weight: 300;
       }
-
+      .header__mobileInner {
+         padding-top: 70px;
+      }
 
    }
 }

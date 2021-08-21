@@ -9,7 +9,7 @@
   }
 }
 .fade-in {
-  animation: fade-in 500ms ease-in-out;
+  animation: fade-in 200ms ease-in-out;
 }
 
 @keyframes fade-out {
@@ -23,7 +23,7 @@
   }
 }
 .fade-out {
-  animation: fade-out 500ms ease-in-out;
+  animation: fade-out 200ms ease-in-out;
 }
 
 html {
@@ -163,7 +163,6 @@ button:hover, .button:hover {
   width: 100%;
   top: 0;
   z-index: 5;
-  padding-top: 70px;
   text-align: center;
   background-color: #01203a;
 }
@@ -177,6 +176,9 @@ button:hover, .button:hover {
   color: #ffffff;
   font-size: 18px;
   font-weight: 300;
+}
+.header__mobileNav .header__mobileInner {
+  padding-top: 70px;
 }
 
 /*# sourceMappingURL=style.css.map */
