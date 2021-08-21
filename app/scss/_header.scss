@@ -53,8 +53,8 @@
 
    }
    // hamburger menu (opened)
-   &.open {
-      .hamburger {
+   .open {
+      &.hamburger {
          > span:first-child {
             transform: rotate(45deg);
          }
