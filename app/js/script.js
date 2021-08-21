@@ -23,6 +23,15 @@ btnHamburger.addEventListener('click', function() {
    }
 })
 
+// when link in mobile nav is clicked, hide mobile nav
+   mobileNav.addEventListener('click', function(selectedLink) {
+      if (selectedLink.target.tagName.toLowerCase() == 'a') {
+         header.classList.remove('open');
+         mobileNav.classList.remove('fade-in');
+         mobileNav.classList.add('fade-out');
+         bodyTag.style.overflow = "visible";
+      }
+   })
 
 /// Stop fade-out animation for mobileNav if window is resized
 //when the window is resized: if fade-out class is present on mobileNav remove it
