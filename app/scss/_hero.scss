@@ -1,12 +1,51 @@
 .hero {
 
-   .flex {
-      justify-content: space-between;
+   padding-top: 70px;
+   padding-bottom: 70px;
+   background-color: $darkBlue;
+   color: $white;
+
+   // container
+   .container {
+
+      @include mobile-query {
+         padding-left: 30px;
+         padding-right: 30px;
+      }
    }
+
+   // flex
+   .flex {
+
+      @include hero-section-query {
+         flex-wrap: wrap;
+         text-align: center;
+      }
+   }
+
+   // hero image
    &__image {
+      max-width: 600px;
+
       img {
-         width: 600px;
-         // height: 659px;
+         width: 100%;
+      }
+   }
+
+   // hero text
+   &__text {
+      h1 {
+         margin-bottom: 30px;
+      }
+      p {
+         margin-bottom: 40px;
+         line-height: 25px;
+         font-size: 18px;
+      }
+      @include hero-section-query {
+         padding-left: 90px;
+         padding-right: 90px;
+         margin-bottom: 40px;
       }
    }
 
