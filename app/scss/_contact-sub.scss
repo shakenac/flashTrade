@@ -1,0 +1,96 @@
+.contact {
+
+   background-color: $darkBlue;
+
+   .container {
+      max-width: 900px;
+   }
+
+   .section-header {
+      h2 {
+         color: $white;
+      }
+      p {
+         color: $blueGreen;
+      }
+   }
+
+   form {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+
+      .name-email {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-column-gap: 20px;
+
+         @include mobile-query {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+         }
+      }
+      input {
+         width: 100%;
+         padding: 12px;
+         border: 1px solid transparent;
+         border-bottom: 1px solid $white;
+         background-color: $darkBlue;
+         color: $white;
+         font-family: 'Nunito Sans', sans-serif;
+
+         &::placeholder {
+            color: $white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+         }
+
+         &:hover {
+            border: 1px solid $white;
+            transition: border .2s ease-in-out;
+         }
+      }
+      textarea {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid transparent;
+         border-bottom: 1px solid $white;
+         background-color: $darkBlue;
+         color: $white;
+         font-family: 'Nunito Sans', sans-serif;
+
+         &::placeholder {
+            color: $white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+         }
+         &:hover {
+            border: 1px solid $white;
+            transition: border .2s ease-in-out;
+         }
+      }
+
+      .submit {
+         input {
+            border: 1px solid transparent;
+         }
+         .form-btn {
+            background-color: $white;
+            color: $darkBlue;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Nunito Sans', sans-serif;
+
+            &:hover {
+               background-color: rgba(255, 255, 255, 0.6);
+               color: $white;
+               transition: all .2s ease-in-out;
+            }
+         }
+      }
+   }
+
+}
